@@ -31,3 +31,9 @@ git commit 的反向命令 git reset HEAD，就是把仓库最新版本转移到
 
 查看远程库 git remote -v
 删除 git remote rm origin
+
+查看分支 git branch
+创建分支 git branch <name>
+创建并切换分支 git checkout -b dev / git switch -c dev
+合并分支到当前分支 git merge <name>
+删除分支 git branch -d <name>
