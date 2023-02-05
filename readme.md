@@ -25,3 +25,5 @@ git add 的反向命令 git checkout，撤销工作区修改，即把暂存区�
 git commit 的反向命令 git reset HEAD，就是把仓库最新版本转移到暂存区。
 1 暂存区为空使用 git diff：因为此时暂存区为空，此时使用 git diff 同样也是比较工作区和仓库，即和使用 git diff HEAD 结果相同
 2 暂存区不为空使用 git diff:因为此时暂存区不为空，此时使用 git diff 比较的就是工作区和暂存区
+
+第一次提交远程 git push -u origin master
