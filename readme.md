@@ -16,3 +16,12 @@ cmd 控制台中换行符默认是 ^ ，而不是\ ，所以它的 more？的意
 方法一：加引号：git reset --hard “HEAD^”
 方法二：加一个^：git reset --hard HEAD^^
 方法三：换成~：git reset --hard HEAD~ 或者 git reset --hard HEAD~1
+
+git add 把文件从工作区>>>>暂存区，git commit 把文件从暂存区>>>>仓库，
+git diff 查看工作区和暂存区差异，
+git diff --cached 查看暂存区和仓库差异，
+git diff HEAD 查看工作区和仓库的差异，
+git add 的反向命令 git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，
+git commit 的反向命令 git reset HEAD，就是把仓库最新版本转移到暂存区。
+1 暂存区为空使用 git diff：因为此时暂存区为空，此时使用 git diff 同样也是比较工作区和仓库，即和使用 git diff HEAD 结果相同
+2 暂存区不为空使用 git diff:因为此时暂存区不为空，此时使用 git diff 比较的就是工作区和暂存区
