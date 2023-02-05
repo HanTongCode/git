@@ -27,3 +27,6 @@ git commit 的反向命令 git reset HEAD，就是把仓库最新版本转移到
 2 暂存区不为空使用 git diff:因为此时暂存区不为空，此时使用 git diff 比较的就是工作区和暂存区
 
 第一次提交远程 git push -u origin master
+
+查看远程库 git remote -v
+删除 git remote rm origin
