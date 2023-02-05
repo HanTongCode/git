@@ -10,3 +10,9 @@ git diff 查看不同
 4，修改 git 本地用户邮箱：git config --global user.email “邮箱地址”
 
 git log 查看日志
+
+git reset
+cmd 控制台中换行符默认是 ^ ，而不是\ ，所以它的 more？的意思是问你下一行是否需要再输入，而 ^ 符号就被当做换行符而被 git 命令忽略掉了。解决方法有如下几种：
+方法一：加引号：git reset --hard “HEAD^”
+方法二：加一个^：git reset --hard HEAD^^
+方法三：换成~：git reset --hard HEAD~ 或者 git reset --hard HEAD~1
